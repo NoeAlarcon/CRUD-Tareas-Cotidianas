@@ -8,7 +8,7 @@
     </head>
 <body>
     <header class="bg-primary text-white text-center py-3 mb-4">
-        <h1>CRUD Tareas Cotidianas</h1>
+        <h1>Tareas Cotidianas</h1>
         <p>Gestión de tareas diarias</p>
     </header>
 
@@ -24,35 +24,59 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
       </div>
     </div>
   </nav>
 
+  <!-- 2,- Cards- 3 ventajas de usar Tareas Cotidianas-->
 
+  <div class="row">
+    <div class="col-sm-6 mb-3 mb-sm-0">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Ya no te preocupes por olvidar esas tareas</h5>
+          <p class="card-text">Ahora todo sera más facil para realizar esas tareas importantes.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Ayudemos a que esto se haga un habito, logrando un éxito de  tu día.</h5>
+          <p class="card-text">Al utilizar esta herramienta tu día a día sera más facil, sin olvidar esas cosas importantes que hay que realizar.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carrousel de Imagenes  -->
+
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="./assets/img/tareas cotidianas pero futurista, tamaño 1200 x 400.png" class="d-block w-100" alt="App task">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="./assets/img/Hombre escritorio IA atras.png" class="d-block w-100" alt="Hombre escritorio IA atras">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/img/El futuro es Hoy.png" class="d-block w-100" alt="El futuro es Hoy">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  
     <!--SCRIP AQUI-->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
