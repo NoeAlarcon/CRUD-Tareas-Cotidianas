@@ -13,19 +13,29 @@
           background-repeat: no-repeat;
           transition: 0.5s; /* Suaviza el cambio */
       }
+      
   </style>
+  
 
   </head>
 <body>
 
-        <h1 class="text-center">Mis Tareas Cotidianas</h1> 
+        <h1 class="text-center">My Tasks</h1> 
+        <p class="text-center">"No dejes para mañana lo que puedes hacer hoy."</p>
         <style>
           h1 {
               font-size: 50px;
-              color: rgb(12, 12, 12);
+              color: rgb(252, 252, 252);
               -webkit-text-stroke: 2px rgb(3, 247, 255); /* Cambia solo el contorno */
           }
+          p {
+              font-size: 30px;
+              color: rgb(61, 255, 2);
+              -webkit-text-stroke: 1px rgb(0, 0, 0); /* Cambia solo el contorno */
+          }
+
       </style>
+
       
 <!--SCRIP AQUI-->
 
@@ -39,7 +49,10 @@
           id="nueva-tarea"
           class="form-control"
           placeholder="Ingresa una tarea"
+          width: 300px; /* Cambia el valor según sea necesario */
+        margin: 0 auto; /* Centra el input horizontalmente */
         />
+        
       </div>
       <div class="mb-3">
         <button
@@ -58,6 +71,8 @@
       integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
       crossorigin="anonymous"
     ></script>
+    
+    
 
 </body>
 </html>
