@@ -70,6 +70,15 @@ inputTarea.addEventListener("input", function () {
   inputTarea.value = capitalizeFirstLetter(inputTarea.value);
 });
 
+// 7.- Quiero que  el imput sea trasparente y el borde en azul tenue
+inputTarea.style.backgroundColor = "transparent";
+inputTarea.style.border = "1px solid rgba(0, 123, 255, 0.5)";
+
+// 8.- Quiero que el botón de agregar tarea transparente con los bordes azul y el texto en negro
+btnAgregar.style.backgroundColor = "transparent";
+btnAgregar.style.border = "1px solid rgba(94, 255, 0, 0.5)";
+btnAgregar.style.color = "black";
+
 
 
 mostrarTareas();

@@ -8,10 +8,12 @@
     <style>
       body {
           background-image: url('./assets/img/El\ futuro\ es\ Hoy\ Grande.png');
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
-          transition: 0.5s; /* Suaviza el cambio */
+          background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+          background-position: center; /* Centra la imagen */
+          background-repeat: no-repeat; /* Evita que la imagen se repita */
+          width: 100vw;
+          height: 100vh;
+ /* Suaviza el cambio */
       }
       
   </style>
@@ -39,7 +41,10 @@
       
 <!--SCRIP AQUI-->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" 
+    crossorigin="anonymous">
+    </script>
  
     <!-- Formulario para crear o actualizar un elemento -->
     <div class="container">
@@ -49,8 +54,7 @@
           id="nueva-tarea"
           class="form-control"
           placeholder="Ingresa una tarea"
-          width: 300px; /* Cambia el valor según sea necesario */
-        margin: 0 auto; /* Centra el input horizontalmente */
+          
         />
         
       </div>
