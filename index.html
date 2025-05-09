@@ -11,14 +11,12 @@
           background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
           background-position: center; /* Centra la imagen */
           background-repeat: no-repeat; /* Evita que la imagen se repita */
-          width: 100vw;
-          height: 100vh;
+          width: 100vw;  /* Asegura que el fondo cubra toda la ventana */
+          height: 100vh; /* Asegura que el fondo cubra toda la ventana */
  /* Suaviza el cambio */
       }
       
   </style>
-  
-
   </head>
 <body>
 
@@ -26,13 +24,13 @@
         <p class="text-center">"No dejes para mañana lo que puedes hacer hoy."</p>
         <style>
           h1 {
-              font-size: 50px;
-              color: rgb(252, 252, 252);
+              font-size: 50px; /* Cambia el tamaño de la fuente */
+              color: rgb(252, 252, 252); /* Cambia el color del texto */
               -webkit-text-stroke: 2px rgb(3, 247, 255); /* Cambia solo el contorno */
           }
           p {
-              font-size: 30px;
-              color: rgb(61, 255, 2);
+              font-size: 30px; /* Cambia el tamaño de la fuente */
+              color: rgb(61, 255, 2); /* Cambia el color del texto */
               -webkit-text-stroke: 1px rgb(0, 0, 0); /* Cambia solo el contorno */
           }
 
@@ -63,11 +61,15 @@
         id="btn-agregar"
         class="btn btn-primary mb-3"
         onclick="agregarTarea()"
-      >
+        style="width: 200px; margin: 20px; auto:;"
+        
+       >
+       
         Agregar Tarea
       </button>
       </div>
       <ul id="lista-tareas" class="list-group"></ul>
+      
     </div>
     <script src="./assets/JS/apps.js"></script>
     <script
@@ -75,8 +77,34 @@
       integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
       crossorigin="anonymous"
     ></script>
-    
-    
+    <style>
+      .container {
+        display: flex direction: column; /* Cambia a columna para apilar los elementos */
+        justify-content: center; /* Centra horizontalmente los elementos */
+        align-items: center; /* Alinea verticalmente los elementos */
+        max-width: 800px; /* Opcional, para limitar el ancho */
+        margin: 20px auto; /* Centrar el contenedor */
+        padding: 20px; /* Espacio interno */
+      }
+      .input-field {
+        flex-grow: 100;           /* Permite que el input use el espacio sobrante */
+        padding: 20px;         /* Espacio interno del input */
+        font-size: 16px;       /* Tamaño de fuente del input */
+      }
+      .button {
+        margin-left: 30px;      /* Espacio entre el input y el botón */
+        padding: 20px 30px; /* Espacio interno del botón */
+        font-size: 16px;      /* Tamaño de fuente del botón */
+        cursor: pointer;     /* Cambia el cursor al pasar por encima */
+      }
+      /* Colocar la lista de tareas debajo del imput */
+      #lista-tareas {
+        margin-top: 20px; /* Espacio entre el input y la lista */
+        width: 80%; /* Asegura que la lista ocupe todo el ancho del contenedor */
+      }
+      
+    </style>
 
+  
 </body>
 </html>
